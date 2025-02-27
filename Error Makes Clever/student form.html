@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+</head>
+
+<style>
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .submitform form {
+        border: 10px double black;
+        padding: 10px;
+    }
+
+    .submitform th,
+    .submitform td {
+        border-collapse: collapse;
+        padding: 10px;
+        border: 1px solid grey;
+    }
+
+    #savebtn {
+        width: 100%;
+        padding: 5px 100px;
+    }
+
+    .outputbody {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .outputbody th,
+    .outputbody td {
+        padding: 10px;
+    }
+
+    .outputbody th,
+    .outputbody td,
+    .outputbody table {
+        border-collapse: collapse;
+        border: 2px solid black;
+    }
+</style>
+
+<body>
+    <div class="submitform">
+        <h1>STUDENT FORM</h1>
+        <form>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <td><input id="name" type="text"></td>
+                </tr>
+                <tr>
+                    <th>Age</th>
+                    <td><input id="age" type="number"></td>
+                </tr>
+                <tr>
+                    <th name="gender">Gender</th>
+                    <td><input name="gender" id="male" value="Men" type="radio">Male <input name="gender" id="female"
+                            value="Female" type="radio">Female</td>
+                </tr>
+                <tr>
+                    <th>Course</th>
+                    <td>
+                        <select name="course" id="course">
+                            <option value="HTML">HTML</option>
+                            <option value="CSS">CSS</option>
+                            <option value="JavaScript">Javascript</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>E-mail</th>
+                    <td><input id="email" type="email"></td>
+                </tr>
+
+            </table>
+            <input onclick="adddetail()" id="savebtn" value="Save" type="button">
+        </form>
+    </div>
+
+    <div class="outputbody">
+        <table>
+            <tr>
+                <th>NAME</th>
+                <th>AGE</th>
+                <th>COURSE</th>
+                <th>GENDER</th>
+                <th>EMAIL</th>
+                <th>ACTION</th>
+            </tr>
+        </table>
+    </div>
+</body>
+
+<script>
+
+    function adddetail() {
+        var name = document.getElementById("name").value;
+        var age = document.getElementById("age").value;
+        var gender = document.querySelector('input[name="gender"]:checked')?.value || "Not selected";
+        var course = document.getElementById("course").value;
+        var email = document.getElementById("email").value;
+
+        var tab = document.querySelector(".outputbody table");
+
+        var delbtn = "<button onclick='dellist(event)'>Delete</button>";
+        
+        var persons = [name, age, course, gender, email,delbtn];
+
+        var tr = document.createElement("tr");
+        tab.append(tr);
+        for (let x of persons) {
+            var td = document.createElement("td");
+            td.innerHTML = x;
+            tr.append(td);
+        };
+    }
+
+    function dellist(event) {
+            console.log(event.target);
+            event.target.closest('tr').remove();
+        }
+</script>
+
+</html>
