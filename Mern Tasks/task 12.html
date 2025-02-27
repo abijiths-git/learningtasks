@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+</body>
+
+<script>
+let text = "";
+
+for (let i = 5; i >= 1; i--) {
+  for (let j = 5; j >= i; j--) {
+    text = text + " * ";
+  }
+  text += "<br>";
+}
+
+document.getElementById("demo").innerHTML = text;
+</script>
+
+
+</html>

@@ -1,0 +1,30 @@
+<!--Map Method in JS and Key Handling of Map-->
+
+<!DOCTYPE html>
+<html>
+
+<body>
+
+  <p id="demo"></p>
+
+  <script>
+
+    const fruits = new Map();
+    fruits.set("apples", 500);
+    fruits.set("bananas", 300);
+    fruits.set("oranges", 200);
+    fruits.set("grapes", 220);
+    fruits.set("watermelon", 550);
+    fruits.set("blueberry", 800);
+
+    const fruitKeys = [...fruits.keys()];
+    let text = "";
+    for (let i = 0; i < fruitKeys.length; i += 2) {
+      text += fruitKeys[i] + "<br>";
+    }
+    document.getElementById("demo").innerHTML = text;
+  </script>
+
+</body>
+
+</html>

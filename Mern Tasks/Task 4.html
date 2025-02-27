@@ -1,0 +1,56 @@
+<!--Hover and n-th child in Table-->
+
+<!DOCTYPE html>
+
+<head>
+
+	<title>Table</title>
+
+</head>
+
+<style>
+	table,
+	th,
+	td {
+		border: 1px solid black;
+		border-collapse: collapse;
+	}
+
+	tr:nth-child(even) {
+		background-color: #FFB6C1;
+	}
+
+	tr:hover {
+		background-color: lightblue;
+	}
+</style>
+
+<body>
+
+	<table style="width: 100%">
+		<caption>
+			<h1>Renewable Energy Sources</h1>
+		</caption>
+		<tr style="background-color: darkorange;">
+			<th>Energy Sources</th>
+			<th>Advantages</th>
+			<th>Challenges</th>
+		</tr>
+		<tr>
+			<td>Solar Power</td>
+			<td>Clean and abundant</td>
+			<td>Weather-dependent</td>
+		</tr>
+		<tr>
+			<td>Wind Power</td>
+			<td>Renewable and efficient</td>
+			<td>Requires large space</td>
+		</tr>
+		<tr>
+			<td>Hydro Power</td>
+			<td>Consistent generation</td>
+			<td>Environmental impact</td>
+		</tr>
+	</table>
+
+</body>

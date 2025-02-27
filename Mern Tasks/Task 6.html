@@ -1,0 +1,38 @@
+<!--Yt Video and function, onclick Method-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Youtube Video Embeded</title>
+</head>
+
+<body>
+    <center>
+        <iframe id="video1" width="500" height="400" src="https://www.youtube.com/embed/AATZl1i2r0I?autoplay=1&mute=1">
+        </iframe> <br><br>
+        <button onclick="smallbtn()">Small</button>
+        <button onclick="normalbtn()">Normal</button>
+        <button onclick="bigbtn()">Big</button>
+    </center>
+
+</body>
+
+</html>
+
+<script>
+    var myVideo = document.getElementById("video1");
+
+    function smallbtn() {
+        myVideo.width = 400;
+        myVideo.height = 300;
+    }
+    function normalbtn() {
+        myVideo.width = 500;
+        myVideo.height = 400;
+    }
+    function bigbtn() {
+        myVideo.width = 600;
+        myVideo.height = 500;
+    } 
+</script>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>New Tab</title>
+    <link rel="icon" href="Images/Chrome logo.png">
+</head>
+
+<style>
+    .googleimg {
+        display: flex;
+        justify-content: center;
+        padding-top: 80px;
+    }
+  /*  #searchimg {
+        display: inline-block;
+        width: 10px;
+    }
+    .searchtab{
+        width: 80%;
+        height: 20px;
+        text-align: center;
+    }
+    #srch{
+        width: 90%;
+    }
+
+    .searchtab {
+    position: relative; /* Set parent element to relative */
+} */
+
+#searchimg {
+    position: absolute; /* Position the icon absolutely */
+    left: 10px; /* Adjust the position to the left */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Offset to truly center */
+    width: 20px; /* Icon size */
+    pointer-events: none; /* Prevent the icon from blocking input focus */
+}
+
+#srch {
+    padding: 10px 10px 10px 40px; /* Add left padding to accommodate the icon */
+    box-sizing: border-box; /* Include padding in element width */
+}
+
+
+</style>
+
+<body>
+    <div class="googleimg">
+        <img src="Images/Google .png" alt="Google">
+    </div>
+    <div class="searchtab">
+        <img id="searchimg" src="Images/search.png" alt="🔍">
+        <input id="srch" type="search" >
+    </div>
+</body>
+</html>

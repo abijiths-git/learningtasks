@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<p id="demo"></p>
+
+<script>
+const time = new Date().getDate() -1;
+
+let mon;
+if (time < 6) {
+  mon = "First Half of The Year";
+} else if (time == 6) {
+  mon = "Month is June";
+} else {
+  mon = "Second Half of The Year";
+}
+document.getElementById("demo").innerHTML = mon;
+
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!--JS Object & Default Function (tolowercase)-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>JS Object</title>
+</head>
+
+<body>
+	<div>
+		<h1>Personal Details</h1>
+		<p id="name"></p>
+		<p id="age"></p>
+		<p id="deg" </p>
+		<p id="clg"></p>
+		<p id="place"></p>
+	</div>
+</body>
+
+</html>
+
+<style>
+	body {
+		display: flex;
+		justify-content: center;
+	}
+</style>
+
+<script>
+	var person1 = {
+		fn: "Abijith",
+		ln: "S",
+		age: 20,
+		place: "Coimbatore",
+		clg: "HICET",
+		degree: "B.E.MECH",
+		fln: function () {
+			return this.fn + " " + this.ln;
+		}
+
+	};
+	document.getElementById("name").innerHTML = person1.fln().toLowerCase();
+	document.getElementById("age").innerHTML = person1.age;
+	document.getElementById("deg").innerHTML = person1.degree.toLowerCase();
+	document.getElementById("clg").innerHTML = person1.clg.toLowerCase();
+	document.getElementById("place").innerHTML = person1.place.toLowerCase();
+</script>

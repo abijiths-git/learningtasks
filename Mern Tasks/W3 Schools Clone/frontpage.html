@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W3Schools Online Web Tutorials</title>
+
+    <!-- Page title icon -->
+    <link rel="icon" href="https://avatars.githubusercontent.com/u/77673807?v=4">
+
+    <!-- Link for importing icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Link for CSS file local -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- HTML Code Styling Link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css">
+</head>
+
+<body>
+    <!-- Division for First header -->
+    <div class="header">
+        <a id="img1" href=""><img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw0VRtIkQFCJRaCZr_rmRe6oi8JEWkr26y5tweuMeqxqyV4GOlQIpsDzAX6Jx25xeADCI&usqp=CAU"
+                alt="W3Schools"></a>
+        <div class="navbar">
+            <span>
+                <a href="">Tutorials</a>
+                <i class="fa fa-caret-down"></i>
+            </span>
+            <span>
+                <a href="">Exercises</a>
+                <i class="fa fa-caret-down"></i>
+            </span>
+            <span>
+                <a href="">Certificates</a>
+                <i class="fa fa-caret-down"></i>
+            </span>
+            <span>
+                <a href="">Services</a>
+                <i class="fa fa-caret-down"></i>
+            </span>
+        </div>
+        <div class="searchbox">
+            <input type="search" placeholder="Search...">
+            <i class="fa fa-search"></i>
+        </div>
+        <div class="certbar">
+            <span>
+                <i class="fas fa-code"></i>
+                <a href="">Spaces</a>
+            </span>
+            <span>
+                <i class="fas fa-graduation-cap"></i>
+                <a href="">For Teachers</a>
+            </span>
+            <span>
+                <i class="fas fa-shopping-cart"></i>
+                <a href="">Get Certified</a>
+            </span>
+        </div>
+        <div class="signlog">
+            <a href="" class="signin">Sign Up</a>
+            <a href="" class="login">Log in</a>
+        </div>
+    </div>
+
+    <!-- Division for Second header  -->
+    <div class="courses">
+
+        <button id="leftbtn" onclick="leftscroll()"> ❮ </button>
+        <div class="scrollbox">
+            <div class="course-box">
+                <a href="">HTML</a>
+                <a href="">CSS</a>
+                <a href="">JAVASCRIPT</a>
+                <a href="">SQL</a>
+                <a href="">PYTHON</a>
+                <a href="">JAVA</a>
+                <a href="">PHP</a>
+                <a href="">HOW TO</a>
+                <a href="">W3.CSS</a>
+                <a href="">C</a>
+                <a href="">C++</a>
+                <a href="">C#</a>
+                <a href="">BOOTSTRAP</a>
+                <a href="">REACT</a>
+                <a href="">MYSQL</a>
+                <a href="">JQUERY</a>
+                <a href="">EXCEL</a>
+                <a href="">XML</a>
+                <a href="">DJANGO</a>
+                <a href="">NUMPY</a>
+                <a href="">PANDAS</a>
+            </div>
+        </div>
+        <button id="rightbtn" onclick="rightscroll()"> ❯ </button>
+
+    </div>
+
+    <!-- Division for Home page content -->
+    <div class="content">
+        <h1>Learn to Code</h1>
+        <h3>With the world's largest web developer site.</h3>
+        <span>
+            <input type="search" placeholder="Search our tutorials, e.g. HTML">
+            <i class="fa fa-search"></i>
+        </span>
+        <h4><a href="">Not Sure Where To Begin?</a></h4>
+    </div>
+    <div id="borderline"></div>
+
+    <!-- Division for HTML -->
+    <div class="courses-box">
+        <div class="c1">
+            <h1>HTML</h1>
+            <h6>The language for building web pages</h6>
+            <a class="a1" href="">Learn HTML</a>
+            <a class="a2" href="">Video Tutorial</a>
+            <a class="a3" href="">HTML Reference</a>
+            <a class="a4" href="">Get Certified</a>
+        </div>
+        <div class="c2">
+            <h3>HTML Example:</h3>
+            <div>
+                <pre class="language-html"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;HTML Tutorial&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;This is a heading&lt;/h1&gt;
+    &lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            </div>
+            <a class="tryit" href="">Try it Yourself</a>
+        </div>
+    </div>
+
+    <!-- Division for CSS -->
+    <div class="courses-box" id="css-box">
+        <div class="c1">
+            <h1>CSS</h1>
+            <h6>The language for styling web pages</h6>
+            <a class="a1" href="">Learn CSS</a>
+            <a class="a3" href="">CSS Reference</a>
+            <a class="a4" href="">Get Certified</a>
+        </div>
+        <div class="c2">
+            <h3>CSS Example:</h3>
+            <div>
+                <pre class="language-css"><code>body {
+    background-color: lightblue;
+}
+h1 {
+    color: white;
+    text-align: center;
+} 
+p {
+    font-family: verdana;
+}</code></pre>
+            </div>
+            <a class="tryit" href="">Try it Yourself</a>
+        </div>
+    </div>
+
+    <!-- Division for Javascript -->
+    <div class="courses-box" id="js-box">
+        <div class="c1">
+            <h1>JavaScript</h1>
+            <h6>The language for programming web pages</h6>
+            <a class="a1" href="">Learn JavaScript</a>
+            <a class="a3" href="">JavaScript Reference</a>
+            <a class="a4" href="">Get Certified</a>
+        </div>
+        <div class="c2">
+            <h3>JavaScript Example:</h3>
+            <div>
+                <pre class="language-javascript"><code>&lt;button onclick="myFunction()"&gt;Click Me!&lt;/button&gt;
+    
+    &lt;script&gt;
+    function myFunction() {
+        let x = document.getElementById("demo");
+        x.style.fontSize = "25px";
+        x.style.color = "red";
+    }
+    &lt;/script&gt;</code></pre>
+            </div>
+            <a class="tryit" href="">Try it Yourself</a>
+        </div>
+    </div>
+
+    <!-- Division for Python -->
+    <div class="courses-box" id="py-box">
+        <div class="c1">
+            <h1>Python</h1>
+            <h6>A popular programming language</h6>
+            <a class="a1" href="">Learn Python</a>
+            <a class="a3" href="">Python Reference</a>
+            <a class="a4" href="">Get Certified</a>
+        </div>
+        <div class="c2">
+            <h3>Python Example:</h3>
+            <div>
+                <pre class="language-python"><code>if 5 > 2:
+    print("Five is greater than two!")</code></pre>
+            </div>
+            <a class="tryit" href="">Try it Yourself</a>
+        </div>
+    </div>
+
+</body>
+
+<script src="script.js"></script>
+</html>

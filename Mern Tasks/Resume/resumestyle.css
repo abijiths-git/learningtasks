@@ -1,0 +1,104 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+.name {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+}
+
+.border {
+    height: 100%;
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid black;
+}
+
+.biodata,
+.obj,
+.edu,
+.inter, .skill, .course,.proj,.actv,.lang {
+    padding: 15px;
+    border-bottom: 1px solid black;
+}
+
+.biodata {
+    display: flex;
+}
+
+.biodata table {
+    padding-right: 50px;
+}
+
+
+
+.edu table {
+    text-align: center;
+    border-collapse: collapse;
+    margin-left: 20px;
+}
+
+.edu th,
+.edu td {
+    border: 1px solid black;
+}
+
+.edu td,
+.edu th {
+    padding: 10px;
+}
+
+h3 {
+    padding-bottom: 10px;
+}
+
+.intern1 {
+    padding-bottom: 10px;
+}
+.inter table{
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+.intern1 th {
+    padding-right: 600px;
+}
+.intern2 th {
+    padding-right: 680px;
+}
+.inter ul{
+    margin-left: 70px;
+}
+
+.skill th{
+    text-align: left;
+    padding-left: 20px;
+}
+.course ul{
+    padding-left: 40px;
+}
+
+.proj h4{
+    padding-left: 20px;
+    padding-bottom: 10px;
+}.proj ul{
+    padding-left: 60px;
+}
+
+.actv ul{
+    padding-left: 40px;
+}
+
+.lang ol {
+    padding-left: 40px; 
+}
+.lang li {
+    display: inline-block;
+}
+
+.decl {
+    padding: 15px;
+}.decl p{
+    padding-left: 20px;
+}
