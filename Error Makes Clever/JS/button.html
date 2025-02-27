@@ -1,0 +1,28 @@
+<!-- <h1 id="name"> NAME </h1>
+<button onclick="abi()">ABI</button>
+<button onclick="abij()"">ABIJITH</button>
+<button onclick="abis()"">ABIJITH S</button>
+
+<script>
+    function abi(){
+        document.getElementById("name").innerHTML="ABI"
+    }
+    function abij(){
+        document.getElementById("name").innerHTML="ABIJITH"
+    }
+    function abis(){
+        document.getElementById("name").innerHTML="ABIJITH S"
+    }
+</script> -->
+
+<h1 id="name"> NAME </h1>
+<button onclick="change(event)">ABI</button>
+<button onclick="change(event)">ABIJITH</button>
+<button onclick="change(event)">ABIJITH S</button>
+
+<script>
+    var names = document.getElementById("name");
+    function change(event){
+        names.innerHTML = event.target.textContent;
+    }
+</script>

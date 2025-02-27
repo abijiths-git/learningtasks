@@ -1,0 +1,18 @@
+<h1>Count: </h1>
+<h1 id="no">0</h1> <br>
+<button onclick="inc()">INCREMENT</button>
+
+<style>
+    h1{
+        display: inline-block;
+    }
+</style>
+
+<script>
+var num = document.getElementById("no");
+var count = 0;
+function inc(){
+    count+=1;
+    num.textContent = count;
+}
+</script>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Image Gallery</title>
+</head>
+<style>
+    body{
+        background-color: black;
+        color: white;
+        display: flex;
+    }
+    div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    h1{
+        text-align: center;
+        flex-basis: 100%;
+    }
+    img{
+        margin: 10px;
+        flex-basis: 25%;
+        flex-grow: 1;
+    }
+</style>
+<body>
+    <div>
+        <h1>Image Gallery</h1>
+        <img src="https://picsum.photos/200/200?cat?1" alt="Image">
+        <img src="https://picsum.photos/200/200?cat?2" alt="Image">
+        <img src="https://picsum.photos/200/200?cat?3" alt="Image">
+        <img src="https://picsum.photos/200/200?cat?4" alt="Image">
+        <img src="https://picsum.photos/200/200?cat?5" alt="Image">
+        <img src="https://picsum.photos/200/200?cat?6" alt="Image">
+    </div>
+</body>
+</html>

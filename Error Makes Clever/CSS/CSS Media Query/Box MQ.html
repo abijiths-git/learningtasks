@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX 1</title>
+</head>
+
+<style>
+    div{
+        flex-basis: 20%;
+        height: 200px;
+        margin: 2px;
+    }
+    #a1{
+        background-color: aqua;
+    }
+    #a2{
+        background-color: violet;
+    }
+    #a3{
+        background-color: green;
+    }
+    #a4{
+        background-color: blue;
+    }
+
+    @media screen and (max-width: 700px){
+        div{
+            flex-basis: 40%;
+        }
+    }
+    @media screen and (max-width: 600px){
+        div{
+            flex-basis: 100%;
+        }
+    }
+</style>
+
+<body style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+    <div id="a1"></div>
+    <div id="a2"></div>
+    <div id="a3"></div>
+    <div id="a4"></div>
+</body>
+</html>

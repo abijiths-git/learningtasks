@@ -1,0 +1,22 @@
+<div>
+    <input id="inputs" type="text">
+    <button onclick="addlist()">ADD</button>
+    <ul id="ulist">
+        <li>Todo list <button onclick="dellist(event)">Delete</button></li>
+    </ul>
+</div>
+
+<script>
+    var ulist = document.querySelector("#ulist");
+    function addlist() {
+        var inputs = document.querySelector("#inputs").value;
+        var li = document.createElement("li");
+        li.innerHTML = inputs+" <button onclick='dellist(event)'>Delete</button>";
+        ulist.append(li);
+    }
+
+    function dellist(event) {
+        console.log(event.target.parentElement);
+        event.target.parentElement.remove();
+    }
+</script>

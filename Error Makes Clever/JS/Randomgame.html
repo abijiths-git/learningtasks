@@ -1,0 +1,33 @@
+<input id="num" value="6" type="number">
+<button onclick="check()">Submit</button>
+<p id="result"></p>
+<p id="score">Your Score: 10</p>
+
+<script>
+    
+    var res = document.getElementById("result");
+    var scr = document.getElementById("score");
+    var scores = 10;
+
+    var rano = Math.floor( (Math.random()*10)+1 )
+    console.log(rano)
+
+    
+
+function check(){
+    var input = document.getElementById("num").value;
+
+    if (input == rano){
+        res.textContent="Your predicted is Correct!";
+        alert("YOU WON")
+    }
+    else {
+        res.textContent="Your prediction is wrong!";
+        scores -= 1;
+        scr.textContent="Your Score: "+scores;
+        if (scores ==0) {
+            alert("Your score reached 0")
+        }
+    }
+}
+</script>
