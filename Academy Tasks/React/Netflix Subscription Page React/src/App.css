@@ -1,0 +1,12 @@
+*{
+  margin: 0%;
+  padding: 0%;
+}
+.netflixpage{
+  width: 100%;
+}
+.pagebody{
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+}

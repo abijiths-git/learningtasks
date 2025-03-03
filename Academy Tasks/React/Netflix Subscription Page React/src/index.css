@@ -1,0 +1,98 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.navbar img {
+    padding: 5px 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: bold;
+    color: black;
+    padding-right: 50px;
+    font-size: 20px;
+}
+.navbar a:hover{
+    text-decoration: underline;
+}
+
+.planbox, .navbar img{
+    cursor: pointer;
+}
+
+.planbox {
+    width: 270px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.plandev {
+    background: radial-gradient(140.76% 131.96% at 100% 100%, rgb(33, 114, 227) 0%, rgba(74, 42, 150, 0.5) 73.57%, rgba(74, 42, 150, 0) 100%), rgb(29, 82, 157);
+    border: 1px solid rgba(128, 128, 128, 0.4);
+    color: white;
+    padding: 10px 20px 20px 20px;
+    border-radius: 10px;
+}
+
+.plandetail h6 {
+    color: rgb(118, 118, 118);
+    font-size: 0.8125rem;
+}
+
+.plandetail h4 {
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 1rem;
+}
+
+.plandetail div {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.4);
+    margin: 20px 15px 10px 15px;
+}
+.devh1 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.devh2 {
+    font-size: 1rem;
+}
+
+.planbox{
+    padding-bottom: 100px;
+}
+.lastdiv {
+    border-bottom: none; 
+}
+
+.footer{
+    width: 100%;
+    font-family: "Roboto", "Ubuntu", "Helvetica Neue", "Segoe UI", sans-serif;
+    color: #737373;
+    background-color: #f3f3f3;
+    padding: 30px 50px;
+}
+.footer h1{
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+.footer li {
+    display: inline-block;    
+    font-size: 15px;
+    padding-right: 20%;
+    padding-bottom: 15px;
+}
+.footer select{
+    padding: 10px 15px;
+}
