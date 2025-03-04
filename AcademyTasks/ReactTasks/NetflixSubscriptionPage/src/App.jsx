@@ -41,6 +41,8 @@ const packages = [
     prices: "₹649",
     quality: "Best",
     res: "4K (Ultra HD) + HDR",
+    aud: "Spatial audio (immersive sound)",
+    audio: "Included",
     device: "TV, computer, mobile phone, tablet",
     watchDev: "4",
     downloadDev: "6"
@@ -55,15 +57,21 @@ function App() {
       <div className='header'>
         <Navbar />
       </div>
+
+      <div style={{padding: "10px 20px"}}>
+        <h6>STEP 1 OF 4</h6>
+        <h2 style={{ fontSize: "32px", fontWeight: "bold"}}>Choose the plan that’s right for you</h2>
+      </div>
+
       <div className='pagebody'>
         {
-          packages.map(({ packName, packQuality, prices, quality, res, device, watchDev, downloadDev }) => (
-            <Plancard pack={packName} packquality={packQuality} price={prices} quality={quality} res={res} devices={device} watchdev={watchDev} dowdev={downloadDev} />
+          packages.map(({ packName, packQuality, prices, quality, res, aud, audio, device, watchDev, downloadDev }) => (
+            <Plancard pack={packName} packquality={packQuality} price={prices} quality={quality} res={res} aud={aud} audio={audio} devices={device} watchdev={watchDev} dowdev={downloadDev} />
           ))
         }
       </div>
       <div>
-        <Footerbar/>
+        <Footerbar />
       </div>
     </div>
 

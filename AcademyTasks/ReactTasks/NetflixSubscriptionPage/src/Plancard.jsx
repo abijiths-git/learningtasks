@@ -1,7 +1,7 @@
 import React from 'react'
 import "./index.css"
 
-function Plancard({pack,packquality,price,quality,res,devices,watchdev,dowdev}) {
+function Plancard({pack,packquality,price,quality,res,aud,audio,devices,watchdev,dowdev}) {
   return (
     <div className='planbox'>
       <div className='plandev'>
@@ -21,6 +21,10 @@ function Plancard({pack,packquality,price,quality,res,devices,watchdev,dowdev}) 
         <div>
           <h6>Resolution</h6>
           <h4>{res}</h4>
+        </div>
+        <div className='audbox'>
+          <h6>{aud}</h6>
+          <h4>{audio}</h4>
         </div>
         <div>
           <h6>Supported devices</h6>

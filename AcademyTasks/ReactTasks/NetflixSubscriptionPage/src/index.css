@@ -32,8 +32,8 @@
 
 .planbox {
     width: 270px;
-    border: 1px solid grey;
-    border-radius: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.4);
+    border-radius: 15px;
     padding: 10px;
     margin: 10px;
 }
@@ -43,7 +43,7 @@
     border: 1px solid rgba(128, 128, 128, 0.4);
     color: white;
     padding: 10px 20px 20px 20px;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 .plandetail h6 {
@@ -70,10 +70,10 @@
 }
 
 .planbox{
-    padding-bottom: 100px;
+    padding-bottom: 20px;
 }
 .lastdiv {
-    border-bottom: none; 
+    border-bottom: none !important;
 }
 
 .footer{
@@ -96,3 +96,8 @@
 .footer select{
     padding: 10px 15px;
 }
+
+.planbox:nth-child(-n+3) .audbox {
+    border-bottom: none;
+}
+
