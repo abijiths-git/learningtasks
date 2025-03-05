@@ -1,18 +1,18 @@
 import React from 'react'
 import "./index.css"
 
-function Plancard({pack,packquality,price,quality,res,aud,audio,devices,watchdev,dowdev}) {
+function Plancard({packName,packQuality,prices,quality,res,aud,audio,device,watchDev,downloadDev}) {
   return (
     <div className='planbox'>
       <div className='plandev'>
-        <h6 className='devh1'>{pack}</h6>
-        <h4 className='devh2'>{packquality}</h4>
+        <h6 className='devh1'>{packName}</h6>
+        <h4 className='devh2'>{packQuality}</h4>
       </div>
 
       <div className='plandetail'>
         <div>
           <h6 className='devicehd'>Monthly price</h6>
-          <h4>{price}</h4>
+          <h4>{prices}</h4>
         </div>
         <div>
           <h6>Video and sound quality</h6>
@@ -28,15 +28,15 @@ function Plancard({pack,packquality,price,quality,res,aud,audio,devices,watchdev
         </div>
         <div>
           <h6>Supported devices</h6>
-          <h4>{devices}</h4>
+          <h4>{device}</h4>
         </div>
         <div>
           <h6>Devices your household can watch at the same time</h6>
-          <h4>{watchdev}</h4>
+          <h4>{watchDev}</h4>
         </div>
         <div className='lastdiv'>
           <h6>Download devices</h6>
-          <h4>{dowdev}</h4>
+          <h4>{downloadDev}</h4>
         </div>
       </div>
     </div>

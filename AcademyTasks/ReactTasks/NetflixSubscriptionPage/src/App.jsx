@@ -2,7 +2,7 @@ import React from 'react';
 import "./App.css";
 import Navbar from './Navbar';
 import Plancard from './Plancard';
-import Footerbar from './Footerbar';
+import Footerbar from './Footerbar'; 
 
 const packages = [
   {
@@ -54,9 +54,7 @@ const packages = [
 function App() {
   return (
     <div className='netflixpage'>
-      <div className='header'>
-        <Navbar />
-      </div>
+      <Navbar />
 
       <div style={{padding: "10px 20px"}}>
         <h6>STEP 1 OF 4</h6>
@@ -65,8 +63,8 @@ function App() {
 
       <div className='pagebody'>
         {
-          packages.map(({ packName, packQuality, prices, quality, res, aud, audio, device, watchDev, downloadDev }) => (
-            <Plancard pack={packName} packquality={packQuality} price={prices} quality={quality} res={res} aud={aud} audio={audio} devices={device} watchdev={watchDev} dowdev={downloadDev} />
+          packages.map((items) => (
+            <Plancard {...items} />
           ))
         }
       </div>
