@@ -1,0 +1,25 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+table{
+  margin: 10px;
+}
+th,td,table {
+  padding: 10px;
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+
+.dropdownbox{
+  margin: 20px;
+  display: block;
+}
+.dropdownbox select{
+  padding: 10px;
+}
+
+.bodydiv{
+  display: flex;
+}
