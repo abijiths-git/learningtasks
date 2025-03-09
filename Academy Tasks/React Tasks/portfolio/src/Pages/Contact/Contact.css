@@ -1,0 +1,69 @@
+.contactdiv {
+    padding: 20px 50px;
+}
+
+.contactdiv h1 {
+    font-size: 70px;
+}
+
+.contactdiv p{
+    color: #333333;
+    font-size: 22px;
+    margin: 20px;
+    padding-left: 20px;
+    font-weight: lighter;
+}
+
+.contactdiv i {
+    padding: 6px 12px;
+    color: white;
+    font-size: 30px;
+    border-radius: 100%;
+    display: inline-block;
+}
+
+.contactdiv a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: larger;
+    font-weight: bold;
+    margin: 15px;
+}
+
+.contactdiv a:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.insta {
+    color: #E1306C;
+}
+
+.fb {
+    color: #0982c0;
+}
+
+.mail,
+.mobno {
+    color: #757575;
+    font-weight: 500 !important;
+}
+
+.insta i {
+    background-color: #E1306C;
+}
+
+.linkedin i {
+    background-color: #0982c0;
+}
+
+.mail i,
+.mobno i {
+    background-color: #333333;
+}
+
+.contactdiv table,
+.contactdiv td {
+    border: none;
+}

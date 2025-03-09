@@ -1,0 +1,31 @@
+.projectdiv{
+    padding: 20px 50px;
+}
+
+.projectdiv h1{
+    font-size: 70px;
+}
+.projectdiv h2{
+    margin-top: 10px;
+    font-size:  25px;
+    padding-left: 20px;
+}.projectdiv h3{
+    margin-top: 10px;
+    font-size:  25px;
+    font-weight: 500;
+    padding-left: 40px;
+}
+
+.projectdiv li{
+    color: #333333;
+    font-size: 22px;
+    font-weight: lighter;
+}
+.projectdiv ul{
+    margin: 20px;
+    padding-left: 60px;
+}
+
+.projectdiv span{
+    padding-left: 80px;
+}
