@@ -35,29 +35,31 @@
                 <h5 class="card-title">Book Author</h5>
                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora nisi perspiciatis
                     voluptatum repellendus. Odit, obcaecati laudantium velit voluptas at ad?</p>
-                <button type="button" onclick="delbtn(event)" class="btn btn-danger"> Danger </button>
+                <button type="button" onclick="delbtn(event)" class="btn btn-danger"> Delete </button>
             </div>
         </div>
     </div>
-    </div>
+    </div> 
 
-    <button type="button" onclick="add()" class="btn btn-dark"> + </button>
+    <button type="button" onclick="add()" class="btn btn-dark addbtn"> + </button>
 
     <div class="addbookpage">
         <div class="bookcont">
             <h4>Add Book</h4>
             <div class="input-group mb-3 ">
-                <input type="text" class="form-control" aria-label="Sizing example input"
+                <input type="text" class="form-control bkhead" aria-label="Sizing example input"
                     aria-describedby="inputGroup-sizing-default" placeholder="Book Title">
             </div>
             <div class="input-group mb-3">
-                <input type="text" class="form-control" aria-label="Sizing example input"
+                <input type="text" class="form-control bkauth" aria-label="Sizing example input"
                     aria-describedby="inputGroup-sizing-default" placeholder="Book Author">
             </div>
-            <div class="input-group mb-3">
-                <input type="text" class="form-control" aria-label="Sizing example input"
+            <div class="input-group mb-3 description">
+                <input type="text" class="form-control bksum" aria-label="Sizing example input"
                     aria-describedby="inputGroup-sizing-default" placeholder="Short Description">
             </div>
+            <button class="btn btn-dark subbtn">Submit</button>
+            <button class="btn btn-dark canlbtn">Cancel</button>
         </div>
     </div>
 
