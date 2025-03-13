@@ -1,0 +1,23 @@
+.cardsouter{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+.cards {
+    width: 350px;
+    background-color: #b7eeac;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 10px;
+}
+.cards > img{
+    width: 300px;
+    height: 300px;
+    margin: 5px 15px;
+}
+
+*{
+    box-sizing: border-box;
+}

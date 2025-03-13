@@ -9,7 +9,6 @@ import Projects from './Pages/Projects/Projects'
 import Skills from './Pages/Skills/Skill'
 import Contact from './Pages/Contact/Contact'
 
-
 const App = () => {
   return (
     <div className='nav-box'>
